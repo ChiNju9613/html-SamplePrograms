@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Survey</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fdf4e3;
+    justify-content: center;
+    align-items: center;
+    height: 155vh;
+}
+
+.main-h{
+    margin-top: 25px;
+    font-size: 40px;
+}
+
+.container {
+    background-color: #f4c7af;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 590px;
+    margin: 40px auto;
+    border: 3px solid #b6e2da;
+}
+
+h1 {
+    text-align: center;
+    color: #2a2a2a;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+}
+
+input, select, textarea{
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    background-color: #ff6b81;
+    width: 150px;
+    margin-left: 190px;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff4a62;
+}
+    </style>
+</head>
+<body>
+    <h1 class="main-h">Library Survey</h1>
+    <p>Help us improve your local library!</p>
+    <div class="container">
+        
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Age" required>
+
+            <label for="visit-frequency">How often do you visit the library?</label>
+            <select id="visit-frequency" required>
+                <option value="" disabled selected>Select</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+
+            <label>When you visit, are you usually able to find what you are looking for?</label>
+            <div class="radio-group">
+                <input type="radio" name="find-items" value="always" required> Always <br>
+                <input type="radio" name="find-items" value="sometimes"> Sometimes<br>
+                <input type="radio" name="find-items" value="rarely"> Rarely<br>
+                <input type="radio" name="find-items" value="never"> Never<br>
+            </div>
+
+            <label>Do you usually find the books and other materials that you are looking for in the library?</label>
+            <div class="radio-group">
+                <input type="radio" name="find-materials" value="always" required> Always<br>
+                <input type="radio" name="find-materials" value="sometimes"> Sometimes<br>
+                <input type="radio" name="find-materials" value="rarely"> Rarely<br>
+                <input type="radio" name="find-materials" value="never"> Never<br>
+            </div>
+
+            <label>Please check all of the reasons you visit the library: (Check all that apply)</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="reasons" value="checkout"> To check out / return books<br>
+                <input type="checkbox" name="reasons" value="computers"> To use the computers<br>
+                <input type="checkbox" name="reasons" value="recommendation"> To get a book recommendation<br>
+                <input type="checkbox" name="reasons" value="research"> To do research / find information<br>
+                <input type="checkbox" name="reasons" value="class"> To take a class<br>
+            </div>
+
+            <label for="comments">Anything you would like to see improve?</label>
+            <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
