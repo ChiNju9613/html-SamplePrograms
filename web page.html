@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Anywhere App</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+    background-image: url("n2.jpg");
+    background-size: 1720px 880px;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.container {
+    width: 530px;
+    height: 360px;
+    margin: 190px 0 0 70px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: px;
+    font-weight: 600;
+    margin-right: 240px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.form-container{
+    width: 500px;
+    height: 350px;
+}
+
+.form-container h2 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.dot {
+    color: #3b82f6;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+p a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 450px;
+    padding: 10px;
+    border: 1px solid #3b3f5c;
+    border-radius: 5px;
+    background: #82838e;
+    color: white;
+}
+
+.input-group input::placeholder {
+    color: #b0b3c0;
+}
+
+.button-group {
+    display: flex;
+    margin-top: 15px;
+}
+
+.change-method {
+    background: #4a4e69;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.create-account {
+    background: #3b82f6;
+    margin-left: 20px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.create-account:hover {
+    background: #2563eb;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">Anywhere app.</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Join</a>
+            </div>
+        </nav>
+        <div class="form-container">
+            <h2>Create new account<span class="dot">.</span></h2>
+            <p>Already a member? <a href="#">Log in</a></p>
+            <form>
+                <div class="input-group">
+                    <input style="width: 220px;" type="text" placeholder="First name" required>
+                    <input style="width: 220px;" type="text" placeholder="Last name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="change-method">Change method</button>
+                    <button type="submit" class="create-account">Create account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

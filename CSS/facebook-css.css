@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(234, 234, 236);
+}
+.div2{
+    background-color: rgb(71, 71, 236);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.div2-1{
+    margin: 10px;
+}
+.div2-2{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+    left: 730px;
+}
+.div3{
+    display: flex;
+}
+.div4{
+    width: 750px;
+    height: 500px;
+    margin-left: 80px;
+}
+h2{
+    font-size: 30px;
+}
+.div5{
+    width: 800px;
+    margin-left: 50px;
+}
+.div5 button{
+    width: 120px;
+    padding: 10px;
+    background: linear-gradient(90deg, rgb(8, 86, 8), rgb(29, 179, 29));
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.div6{
+    display: flex;
+    padding-bottom: 10px;
+}
+.div6 p{
+    margin: 15px 0 0 10px;
+    font-size: 22px;
+}
+.inp1{
+    width: 200px;
+    margin-right: 20px;
+}
+.inp2{
+    height: 30px;
+    margin-top: 10px;
+}
+.btn1{
+    align-items: end;
+}
+input{
+    width: 470px;
+}
+img{
+    width: 50px;
+}

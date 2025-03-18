@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div1{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <form action="">
+            <h1>Form</h1><br>
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Your name" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" placeholder="enter email"><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="10" max="100" required><br>
+
+            <label for="birthdate">Birthdate</label>
+            <input type="date" name="birthdate" id="birthdate" required><br>
+
+            <label for="color">Favorite Color</label>
+            <input type="color" name="color" id="color"><br>
+
+            <input type="checkbox" name="toppings" id="option1" value="cheese">
+            <label for="option1">Cheese</label>
+            <input type="checkbox" name="topping" id="option2" value="pepperoni">
+            <label for="option">Pepperoni</label>
+            <input type="checkbox" name="toppings" id="option3" value="mushroom">
+            <label for="option3">Mushroom</label><br>
+
+            <input type="radio" name="payment" id="credit">
+            <label for="credit">Credit Card</label>
+            <input type="radio" name="payment" id="paypal">
+            <label for="paypal">Paypal</label>
+            <input type="radio" name="payment" id="bitcoin">
+            <label for="bitcoin">Bitcoin</label>
+
+            <label for="pic">Image</label>
+            <input type="file" name="pic" id="pic"><br>
+
+            <label for="url">Enter URL</label>
+            <input type="url" name="url" id="url"><br>
+
+            <label for="volume">Volume</label>
+            <input type="range" name="volume" id="volume" min="0" max="100" step="1"><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter password"><br>
+
+            <label for="meeting-time">Meeting Time</label>
+            <input type="time" name="meeting-time" id="meeting-time" required><br>
+
+            <label for="country">Country</label>
+            <select name="country" id="country" multiple size="3">
+                <option value="india" selected disabled>INDIA</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+            </select><br>
+
+            <input type="submit" value="Register" name="btn_submit" id="">
+            <input type="reset" value="clear" name="btn_clear" id="">
+            <input type="button" value="hide" name="btn_hide" disabled>
+        </form>
+    </div>
+</body>
+</html>
